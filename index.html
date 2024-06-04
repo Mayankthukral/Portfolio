@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Thukral - Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        header, section { margin: 20px; padding: 20px; }
+        header { background-color: #f4f4f4; }
+        section { border-bottom: 1px solid #ddd; }
+        h1, h2 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { padding: 5px 0; }
+        .project-title { font-size: 24px; font-weight: bold; color: black; margin-bottom: 10px; }
+        .project-description { margin-top: 5px; }
+        .project { margin-bottom: 60px; } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mayank Thukral</h1>
+        <p>DevOps and Cloud Engineer</p>
+        <p>📧 <a href="mailto:mayankthukral181099@gmail.com">mayankthukral181099@gmail.com</a></p>
+        <p>📱 +1 437-673-3431</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/mayank-thukral-73342612a/" target="_blank">LinkedIn Profile</a></p>
+        <p>🔗 <a href="https://github.com/Mayankthukral" target="_blank">GitHub Profile</a></p>
+    </header>
+    <section>
+        <h2>Professional Summary</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <p>Experienced DevOps engineer proficient in GitHub Actions, Jenkins, Docker, Kubernetes, Azure, Terraform, and security measures, dedicated to enhancing development efficiency and system integrity through automation and continuous improvement.</p>
+    </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <ul>
+            <li><strong>Cloud Technologies:</strong> Azure</li>
+            <li><strong>Infrastructure as Code:</strong> Terraform</li>
+            <li><strong>Container Technologies:</strong> Docker, Kubernetes</li>
+            <li><strong>Scripting:</strong> Shell, Python, Azure-SDK</li>
+            <li><strong>Version Control System:</strong> Git, GitHub, Gitlab</li>
+            <li><strong>Configuration Management:</strong> Ansible</li>
+            <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, Gitlab</li>
+            <li><strong>Monitoring Tools:</strong> Azure Monitor, Prometheus, Grafana</li>
+            <li><strong>Code Analysis Tool:</strong> SonarQube</li>
+            <li><strong>Secrets Management Tools:</strong> GitHub Secrets, Jenkins Credentials, Azure Key Vault</li>
+            <li><strong>Project Collaboration Tools:</strong> Slack, Microsoft Teams</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Experience</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <h3>Vlogics lab, Mohali—Junior DevOps Engineer</h3>
+        <p>January 2021 – July 2022</p>
+        <ul>
+            <li>Designed and implemented Jenkins-based CI/CD pipelines, automating end-to-end processes and reducing deployment errors.</li>
+            <li>Demonstrated proficiency in Ansible and Terraform, creating Azure infrastructure with Terraform and managing package installations using Ansible.</li>
+            <li>Set up Kubernetes Ingress and Ingress controller, optimizing application routing and resource allocation.</li>
+            <li>Collaborated with cross-functional teams for seamless project delivery in an Agile environment.</li>
+            <li>Managed Unix server patching using Ansible for infrastructure patch management.</li>
+            <li>Configured application monitoring with Prometheus and Grafana.</li>
+            <li>Developed and maintained CI/CD pipelines using Jenkins, Git, Maven, Docker Hub, Ansible, and SonarQube.</li>
+            <li>Wrote Ansible YAML scripts for remote server configuration.</li>
+            <li>Configured Jenkins CI/CD pipelines using declarative pipeline syntax for deployment stages.</li>
+            <li>Automated manual tasks and processes for better governance and compliance using Python, Terraform, Azure Monitor, Django, Ansible, and GitHub.</li>
+            <li>Implemented CI/CD framework with Jenkins, Maven, and Nexus in a Linux environment.</li>
+            <li>Managed build jobs and integration tests on Jenkins Master/Slave configuration.</li>
+            <li>Worked closely with developers and DevOps for software and system problem debugging.</li>
+            <li>Created release notes based on build contents and published artifacts to stakeholders.</li>
+            <li>Automated build processes and monitored changes.</li>
+            <li>Promoted Jenkins use within the developer community for Continuous Integration.</li>
+            <li>Developed scripts for automated validation and test case execution after builds.</li>
+            <li>Utilized Code Quality tools like SonarQube.</li>
+            <li>Implemented version control with branching, merging, tagging, and environment management using Git.</li>
+            <li>Developed Terraform scripts for Dev, Staging, and Prod environments.</li>
+            <li>Managed infrastructure using Jenkins and various Azure services.</li>
+        </ul>        
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <div class="project">
+            <p class="project-title">CI/CD Pipeline Project @College</p>
+            <p class="project-description"><b>Title:</b>Implemented a three-tier application CI/CD pipeline using GitHub Actions and deployed on staging and production environments based on branch changes.</p>
+            <p class="Repository Link"><a href="https://github.com/Mayankthukral/3-tier-app-CI-CD" target="_blank">https://github.com/Mayankthukral/3-tier-app-CI-CD</a></p>
+    <ul>
+        <li>Designed and implemented GitHub Actions CI/CD pipelines, automating end-to-end CI/CD processes, and reducing deployment errors.</li>
+        <li>Stored secrets and passwords used in the workflow securely in GitHub Secrets.</li>
+        <li>Created pipeline steps to run unit tests on decoupled frontend and backend services connected to MongoDB Atlas, followed by Sonar scanner analysis to generate reports on SonarCloud. After these checks, dockerized both services and pushed them to the container registry.</li>
+        <li>Implemented separate deployments: if changes were pushed to the testing branch, the staging cluster was provisioned and updated; if changes were made in the master branch, the production cluster was provisioned and updated.</li>
+        <li>For each distinct environment, provisioned a Kubernetes cluster or made necessary adjustments using Terraform Cloud, ensuring that the state file was locked during infrastructure changes. Installed an Nginx ingress controller to expose the front-end service, enabling external access. Subsequently, applied all required deployments within the cluster, ensuring the smooth functioning of backend and frontend services. Finally, set up Prometheus and Grafana for continuous monitoring, allowing for real-time performance tracking and system health assessment.</li>
+    </ul>
+
+    <p><b>Technologies used: </b>GitHub Actions, MERN stack, Docker, Docker Hub, Terraform Cloud, Azure Kubernetes Service, GitHub Secrets, Prometheus, and Grafana.</p>
+
+    <p><b>Outcome: </b>Streamlined development workflows, scalable Kubernetes infrastructure, and comprehensive monitoring for enhanced deployment efficiency and application performance.</p>
+
+            
+
+        </div>
+        <div class="project">
+            <p class="project-title"><strong>CI/CD Implementation using Jenkins and GitOps Approach</strong></p>
+            <p class="project-description"><b>Title: </b>Built CI/CD using Jenkins Declarative pipeline and deployed on Azure Kubernetes Service for a Django application connected to Azure PostgreSQL Service.</p>
+            <p class="Repository Link"><a href="https://github.com/Mayankthukral/Django-project-" target="_blank">https://github.com/Mayankthukral/Django-project-</a></p>
+            <ul>
+                <li>Built CI/CD using Jenkins Declarative pipeline and deployed on Azure Kubernetes Service for Django application connected to Azure Postgres SQL Service</li>
+                <li>As part of the pipeline, I have implemented various stages such as executing ansible playbook for installing required configurations, setup environment, check database existence if not create one, run migrations, static code analysis using SonarQube, perform unit test, dockerize the application and push to Docker hub and push updated Kubernetes manifest with new image tag.</li>
+                <li>Deployment with GitOps approach, setup ArgoCD to monitor Specified git repository to track changes in helm chart with updated image tag and deploy on Azure Kubernetes cluster.</li>
+                <li>Monitored Azure clusters using Azure Monitor and Application Insights to ensure performance, availability, and optimization of applications.</li>
+            </ul>
+            <p><b>Technologies used: </b>Jenkins, Azure Kubernetes Service, Azure PostgreSQL Service, SonarCloud, Docker, Docker Hub, ArgoCD, Terraform, Azure Monitor, python, Django, ArgoCD, Ansible and Git</p>
+            
+            
+            
+        </div>
+        <div class="project">
+            <p class="project-title">Terraform-Based Azure Infrastructure Deployment for Static Web Application - <b>Currently Working</b></p>
+            <p class="project-description"><b>Title:</b>Orchestrated complete Azure infrastructure deployment using Terraform modules for a static web application.</p>
+            <p class="Repository Link"><a href="https://github.com/Mayankthukral/Azure-Infra-Terraform" target="_blank">https://github.com/Mayankthukral/Azure-Infra-Terraform</a></p>
+        <ul>
+            <li>Orchestrated complete Azure infrastructure deployment using Terraform modules for modularity and scalability.</li>
+            <li>Utilized Azure Storage Container as a remote backend for Terraform.</li>
+            <li>Created a resource group as a logical container for all subsequent Azure resources.</li>
+            <li>Provisioned a storage account to host static web application files, ensuring high availability and durability.</li>
+            <li>Configured Azure App Service, powered by an app service plan, to deploy and host the static web application.</li>
+            <li>Leveraged Terraform's module capabilities to encapsulate reusable components for streamlined management and scalability.</li>
+            <li>Defined dependencies between resources to ensure the correct provisioning order and reliable resource connectivity (e.g., Azure App Service depending on the storage account for web content).</li>
+            <li>Optimized deployment efficiency, enhanced resource utilization, and facilitated future updates and expansions.</li>
+            <li>Managed cross-resource dependencies and state file management in a remote backend for consistent infrastructure deployment.</li>
+          </ul>
+
+          <p><b>Technologies used: </b>Terraform, Azure Resource Manager (ARM), Azure Storage Account, Azure App Service, Azure App Service Plan, Git, and GitHub.</p>
+            
+        </div>
+    </section>
+    <section>
+        <h2>Certifications</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <ul>
+            <li>Azure Fundamentals (Az900)</li>
+            <li>Azure Administrator (Az-104)</li>
+            <li>HashiCorp Certified Terraform Associate (003)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <style>
+            ul { list-style-type: disc; }
+        </style>
+        <ul>
+            <li>Postgraduate in DevOps for Cloud Computing - Lambton College, Toronto, Ontario, Canada.</li>
+            <li>Bachelor of Computer Application – Punjabi University, Punjab, India.</li>
+        </ul>
+    </section>
+</body>
+</html>
